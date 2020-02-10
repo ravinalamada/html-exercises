@@ -21,18 +21,21 @@
 
       <!-- Add your log in form here -->
 
-      <form action="session" method="POST">
+      <form action="/log-in" method="POST">
 
-        <div class="container">
-        <label for="uname"><br>Username</br></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="psw"><br>Password</br></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-
-        <div class="container" style="color: chartreuse">
-          <p><button type="submit"> log-in</button></p>
+      <p>
+        <label for="email">
+          E_mail address<br>
+        <input type="text" id="E_mail address" name="username" require>
+        </label>
+      </p>
+      <p>
+        <label for="password">
+          Password<br>
+        <input type="password" id="Password-field" name="password" required>
+        </label>
+      </p>
+          <p><button type="submit">Log in</button></p>
         </div>
       </form>
     </main>
