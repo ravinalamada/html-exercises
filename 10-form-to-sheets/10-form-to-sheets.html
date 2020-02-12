@@ -15,12 +15,7 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
-      <p>
-      <legend><b>contributor</b></legend>
-        <label>
-          <input type="text" id="contributor" name="contributor">
-        </label
-      </p>
+          <input type="hidden" name="contributor" value="Prisca">
 
       <p>
         <legend><b>artist_name</b></legend>
@@ -30,20 +25,20 @@
       </p>
 
       <p>
-        <legend><b>artist_id</b></legend>
           <label>
-            <input type="text" id="artist_id" name="artist_id" required>
+            artist_id<br>
+            <input type="text" id="artist_id" pattern="[a-z_]+" required><br>
+            <small>Please use artit's name as lowercase letters, and replace spaces into dashes.</small>
           </label>
       </p>
 
-        <legend><b>genre</b></legend>
         <p>
           <label>
             Select your genre here:
           </label>
         <select name="genre">
-          <option>genre</option>
-          <option value="basesa">Basesa</option>
+          <optgroup label="Malagasy Genres">
+          <option value="basesa" selected>Basesa</option>
           <option value="batselaka">Batselaka</option>
           <option value="kawitry">Kawitry</option>
           <option value="kilalaky">Kilalaky</option>
@@ -54,24 +49,25 @@
           <option value="slow">Slow</option>
           <option value="tsapiky">Tsapiky</option>
           <option value="watsawatsa">Watsawatsa</option>
+          </optgroup>
         </select>
         </p>
 
       <p>
-        <legend><b>photo_url</b></legend>
+        <legend>photo_url</legend>
           <label>
             <input type="url" id="photo_url" name="photo_url">
           </label>
       </p>
 
       <p>
-        <legend><b>biography</b></legend>
-        <textarea name="biography">
+        <legend>biography</legend>
+        <textarea row="8" cols="30" name="biography">
         </textarea>
       </p>
 
       <p>
-        <legend><b>website</b></legend>
+        <legend>website</legend>
         <label>
           <input type="url" id="website" name="website">
         </label>
