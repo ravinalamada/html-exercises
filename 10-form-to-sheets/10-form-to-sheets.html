@@ -15,6 +15,67 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
+      <p>
+      <legend><b>contributor</b></legend>
+        <label>
+          <input type="text" id="contributor" name="contributor">
+        </label
+      </p>
+
+      <p>
+        <legend><b>artist_name</b></legend>
+          <label>
+            <input type="text" id="artist_name" name="artist_name" required>
+          </label>
+      </p>
+
+      <p>
+        <legend><b>artist_id</b></legend>
+          <label>
+            <input type="text" id="artist_id" name="artist_id" required>
+          </label>
+      </p>
+
+        <legend><b>genre</b></legend>
+        <p>
+          <label>
+            Select your genre here:
+          </label>
+        <select name="genre">
+          <option>genre</option>
+          <option value="basesa">Basesa</option>
+          <option value="batselaka">Batselaka</option>
+          <option value="kawitry">Kawitry</option>
+          <option value="kilalaky">Kilalaky</option>
+          <option value="malesa">Malesa</option>
+          <option value="mangaliba">Mangaliba</option>
+          <option value="salegy">Salegy</option>
+          <option value="sega">Sega</option>
+          <option value="slow">Slow</option>
+          <option value="tsapiky">Tsapiky</option>
+          <option value="watsawatsa">Watsawatsa</option>
+        </select>
+        </p>
+
+      <p>
+        <legend><b>photo_url</b></legend>
+          <label>
+            <input type="url" id="photo_url" name="photo_url">
+          </label>
+      </p>
+
+      <p>
+        <legend><b>biography</b></legend>
+        <textarea name="biography">
+        </textarea>
+      </p>
+
+      <p>
+        <legend><b>website</b></legend>
+        <label>
+          <input type="url" id="website" name="website">
+        </label>
+      </p>
 
       <button type="submit">Save</button>
     </form>
