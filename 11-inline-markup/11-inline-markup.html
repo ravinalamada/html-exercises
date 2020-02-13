@@ -25,17 +25,16 @@
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, on Wednesay the 12th of February, 2020.
+        The time is now 2pm, on <u>Wednesay</u> the 12th of February, 2020.
       </p>
       <p>
-      The time is<time datetime="12-02-2020 2:00">now</time>
+        The time is now <time datetime="2020-02-12T14:00">12<sup>th</sup>of February</time>
       </p>
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-      <abbr title="Hydrogene">H20</abbr>
-        The elements H and O, bond as H20, or water (as it is colloquaially known).
+        The elements H and O, bond as , or water (as it is colloquaially known) H<sub>O</sub>2.
       </p>
 
       <hr>
@@ -43,11 +42,11 @@
       <!-- Sometimes we just want to make something look a certain way -->
       <p>
         Editor's Notes:<br>
-
-        Please use CTRL+B to bold this word: Critical<br>
+      </p>
+        Please use <kbd>CTRL+B</kbd> to bold this word: Critical<br>
         <p><b>Critical</b></p>
 
-        Please use CTRL+I to italicise this word: Doubtful<br>
+        Please use <kbd>CTRL+I</kbd> to italicise this word: Doubtful<br>
       <p><i>Doubtful</i></p>
 
         Please underline this word: Thinking<br>
@@ -60,26 +59,26 @@
         Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
         "The slow brown fox jumped over the lazy dog."<br>
 
-      <p>The slow brow fox jumped over the lazy dog <del>slow</del><ins>quick</ins>
+      <p>The slow brow fox jumped over the lazy dog <del>slow</del> <ins> quick</ins>
       </p>
 
       <hr>
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
-      <p>
-        "Woah! 'that' was unexpected!" exclaimed Keith.<br>
-        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
 
-        <q>Unexpected value for argument 'that'
-            - in function clickHandler, line 12
-            - called from function anonymous, line 34</q>
-      </p>
+        <q>Woah! <code>that</code> was unexpected!</q> exclaimed Keith.<br>
+        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
+        <q>Unexpected value for argument <code>that</code></q>
+      <ul>
+        <li>in function clickHandler, line 12</li>
+        <li>called from function anonymous, line 34</li>
+      </ul>
 
       <hr>
 
       <!-- We can add helpful markup to highlight words -->
       <p>
-        Your search term: 'Helicopter' was found in the following documents:
+        Your search term: <mark>'Helicopter'</mark> was found in the following documents:
       </p>
       <ul>
         <li>
@@ -87,7 +86,6 @@
         <small>The Model 222 is a helicopter made by the Bell Helicopter Corporation.</small>
         </li>
       </ul>
-
     </main>
   </body>
 </html>
