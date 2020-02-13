@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-      11: Inline markup
-    </title>
-  </head>
-  <body>
-    <header>
-      <h1>
-        Inline markup
-      </h1>
-      <p>Use the inline elements mentioned in the instructions for this exercise on the markup below.
-    </header>
-    <main>
 
-      <!-- In this example, the 'Wait!' needs stressing when vocalised -->
-      <p>
-       <em>"Wait!"</em> shouted Jesse.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    11: Inline markup
+  </title>
+</head>
 
-      <hr>
+<body>
+  <header>
+    <h1>
+      Inline markup
+    </h1>
+    <p>Use the inline elements mentioned in the instructions for this exercise on the markup below.
+  </header>
+  <main>
 
-      <!-- It's a good idea to tell a computer how to read a datetime: -->
-      <p>
-        The time is now 2pm, on <u>Wednesay</u> the 12th of February, 2020.
-      </p>
-      <p>
-        The time is now <time datetime="2020-02-12T14:00">12<sup>th</sup>of February</time>
-      </p>
-      <hr>
+    <!-- In this example, the 'Wait!' needs stressing when vocalised -->
+    <p>
+      <q><em>Wait</em>!</q> shouted Jesse.
+    </p>
 
-      <!-- What do 'H' and 'O' mean here? -->
-      <p>
-        The elements H and O, bond as , or water (as it is colloquaially known) H<sub>O</sub>2.
-      </p>
+    <hr>
 
-      <hr>
+    <!-- It's a good idea to tell a computer how to read a datetime: -->
+    <p>
+      The time is now <time datetime="2020-02-12T14:00:00+03:00">2pm,on Wednesay</time>
+    </p>
+    <hr>
 
-      <!-- Sometimes we just want to make something look a certain way -->
-      <p>
-        Editor's Notes:<br>
-      </p>
-        Please use <kbd>CTRL+B</kbd> to bold this word: Critical<br>
-        <p><b>Critical</b></p>
+    <!-- What do 'H' and 'O' mean here? -->
+    <p>
+      The elements <abbr title="Hydrogen">H</abbr> and O, bond as , or <i>water</i> (as it is colloquaially known)
+      H<sub>O</sub>2.
+    </p>
 
-        Please use <kbd>CTRL+I</kbd> to italicise this word: Doubtful<br>
-      <p><i>Doubtful</i></p>
+    <hr>
 
-        Please underline this word: Thinking<br>
-        <p><u>Thinking</u></p>
+    <!-- Sometimes we just want to make something look a certain way -->
+    <p>
+      Editor's Notes:<br>
+    </p>
+    Please use <kbd>CTRL</kbd> + <kbd>B</kbd> to bold this word: Critical<br>
+    <p><b>Critical</b></p>
 
-        Please put a line through this word: Assuming<br>
-        <p><s>Assuming</s></p>
+    Please use <kbd>CTRL</kbd> + <kbd>I</kbd> to italicise this word: Doubtful<br>
+    <p><i>Doubtful</i></p>
+
+    Please underline this word: Thinking<br>
+    <p><u>Thinking</u></p>
+
+    Please put a line through this word: Assuming<br>
+    <p><s>Assuming</s></p>
 
 
-        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-        "The slow brown fox jumped over the lazy dog."<br>
+    Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
+    "The slow brown fox jumped over the lazy dog."<br>
 
-      <p>The slow brow fox jumped over the lazy dog <del>slow</del> <ins> quick</ins>
-      </p>
+    <p>The slow brow fox jumped over the lazy dog <del>slow</del> <ins> quick</ins>
+    </p>
 
-      <hr>
+    <hr>
 
-      <!-- We can do the same with samples of code, even maintaining the whitespace: -->
+    <!-- We can do the same with samples of code, even maintaining the whitespace: -->
 
-        <q>Woah! <code>that</code> was unexpected!</q> exclaimed Keith.<br>
-        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
-        <q>Unexpected value for argument <code>that</code></q>
-      <ul>
-        <li>in function clickHandler, line 12</li>
-        <li>called from function anonymous, line 34</li>
-      </ul>
+    <q><em>Woah!</em> <code>that</code> was unexpected!</q> exclaimed Keith.<br>
+    Curiously, Jesse looked at the output on Keith's screen and it said:<br>
+    <pre>
+      Unexpected value for argument <code>that</code>
+        - in function <code>clickHandler</code>, line 12
+        - called from function anonymous, line 34
+    </pre>
+    <hr>
 
-      <hr>
+    <!-- We can add helpful markup to highlight words -->
+    <p>
+      Your search term: <mark>'Helicopter'</mark> was found in the following documents:
+    </p>
+    <ul>
+      <li>
+        <a href="#bell-222">Bell 222</a>:<br>
+        <small>The Model 222 is a <mark>helicopter</mark> made by the Bell <mark>Helicopter</mark> Corporation.</small>
+      </li>
+    </ul>
+  </main>
+</body>
 
-      <!-- We can add helpful markup to highlight words -->
-      <p>
-        Your search term: <mark>'Helicopter'</mark> was found in the following documents:
-      </p>
-      <ul>
-        <li>
-          <a href="#bell-222">Bell 222</a>:<br>
-        <small>The Model 222 is a helicopter made by the Bell Helicopter Corporation.</small>
-        </li>
-      </ul>
-    </main>
-  </body>
 </html>
