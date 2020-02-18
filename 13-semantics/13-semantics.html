@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-      13: Semantic HTML
-    </title>
-  </head>
-  <body>
-    <header>
-      <h1>
-        Semantic HTML
-      </h1>
-    </header>
-    <main>
 
-      <section>
-        <h2>A menu of a list of links</h2>
-        <!--
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    13: Semantic HTML
+  </title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Semantic HTML
+    </h1>
+  </header>
+  <main>
+
+    <section>
+      <h2>A menu of a list of links</h2>
+      <!--
           1. Create a list of links to form a navigational element. The links are:
             - "Home" links to "/"
             - "Our services" links to "/services"
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
-        <ul>
-          <li>
-            <a href="/">
-              Home</a>
-          </li>
-          <li>
-            <a href="/services">
-              Our services</a>
-          </li>
-          <li>
-            <a href="/about">
-              About us</a>
-          </li>
-          <li>
-            <a href="/contact">
-              Contact us</a>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="/">
+            Home</a>
+        </li>
+        <li>
+          <a href="/services">
+            Our services</a>
+        </li>
+        <li>
+          <a href="/about">
+            About us</a>
+        </li>
+        <li>
+          <a href="/contact">
+            Contact us</a>
+        </li>
+      </ul>
     </section>
 
-      <section>
-        <h2>A profile update form</h2>
-        <!--
+    <section>
+      <h2>A profile update form</h2>
+      <!--
           2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
 
           The user's:
@@ -59,30 +61,30 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
-      <form action="/profile/save" method="POST">
+      <form action="/profile/save" method="POST"></form>
         <p>
           <label>
-            First name<br>
-            <input type="text" id="first name" name="profile_first_name">
+            First-name<br>
+            <input type="text" id="first-name" name="profile_first_name">
           </label>
         </p>
         <p>
           <label>
-            family name<br>
-            <input type="text" id="family name" name="profile_family_name">
+            family-name<br>
+            <input type="text" id="family-name" name="profile_family_name">
           </label>
         </p>
         <p>
           <label>
             Email<br>
-            <input type="text" id="email" name="username" mandatory>
+            <input type="text" id="email" name="username">
           </label>
         </p>
 
         <p>
           <label>
-            phone number<br>
-            <input type="tel" id="phone number" name="phone" optional>
+            phone-number<br>
+            <input type="tel" id="phone-number" name="phone">
           </label>
         </p>
 
@@ -96,21 +98,24 @@
             <option value="Prefer_to_not_disclose">na</option>
           </select>
           <p>
-            <small>select your gender like this please, if you are male choose m,female choose f,and prefer to not disclose choose na.</small>
+            <small>select your gender like this please, if you are male choose m,female choose f,and prefer to not
+              disclose choose na.</small>
           </p>
-        </section>
+    </section>
 
-        <div class="group">
-          <label for="photo">
-            photo
-          </label>
-            <input id="photo" type="file" name="photo" accept="PNGs,JPGs,WebPs">
-        </div>
+    <div class="group">
+      <label for="photo">
+        photo
+      </label>
+      <input id="photo" type="file" name="photo"><br>
+      <small>It accepts only PNGs,JPGs and WebP</small>
+    </div>
 
 
-      <section>
-        <h2>An excerpt</h2>
-        <!--
+
+    <section>
+      <h2>An excerpt</h2>
+      <!--
           3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
 
           "The only reason you had me was so you could get a maid you wouldn't have to pay," you'll say bitterly, dragging the vacuum cleaner out of the closet.
@@ -119,24 +124,27 @@
 
           "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
         -->
-        <p>
-            The story of your life by Ted Chiang.
-        </p>
-        <p>
-          <q>
-            The only reason you had me was so you could get a maid you wouldn't have to pay,</q> you'll say bitterly, dragging the vacuum cleaner out of the closet.
-        </p>
-        <p>
-          <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q>
-        </p>
-        <p>
-          <q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.</p>
-        </p>
-      </section>
+      <p>
+        The story of your life by Ted Chiang.
+      </p>
+      <p>
+        <q>
+          The only reason you had me was so you could get a maid you wouldn't have to pay,</q> you'll say bitterly,
+        dragging the vacuum cleaner out of the closet.
+      </p>
+      <p>
+        <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and
+          having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q>
+      </p>
+      <p>
+        <q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and
+        plug it into the wall outlet.
+      </p>
+    </section>
 
-      <section>
-        <h2>A table</h2>
-        <!--
+    <section>
+      <h2>A table</h2>
+      <!--
           4. We need a table, with the following column headers:
 
             - Name
@@ -152,7 +160,7 @@
 
           Please provide a summary of the student's information.
         -->
-      <table summary="It describes the age, height and weight of three people,who are called Fred,Anne and Judith".>
+      <table summary="It describes the age, height and weight of three people,who are called Fred,Anne and Judith">
         <thead>
           <tr>
             <th scope="col" id="header_name">Name</th>
@@ -174,7 +182,7 @@
             <th headers="header_name" scope="row" id="row_anne">Anne</th>
             <td headers="row_anne header_age">26</td>
             <td headers="row_anne header_weight">56kg</td>
-            <td headers="row_anne header_heigth">173cm</td>
+            <td headers="row_anne header_height">173cm</td>
           </tr>
 
           <tr>
@@ -184,12 +192,12 @@
             <td headers="row_judith header_height">168cm</td>
           </tr>
         </Tbody>
-      </table summary>
-      </section>
+      </table>
+    </section>
 
-      <section>
-        <h2>Search results</h2>
-        <!--
+    <section>
+      <h2>Search results</h2>
+      <!--
           5. Create a search results page in this folder and link to it from here.
 
           In this new page you create…
@@ -222,36 +230,8 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
-          <p>
-            <h1>Search page</h1>
-          </p>
-          </a>
-          <p>
-          These are two links which talk about critical thinking.
-          </p>
-          <a href="/search">Search Critical Thinking</a>
-
-          <a href="https://en.wikipedia.org/wiki/Critical_thinking">
-            <h1>
-              Wikipedia:critical thinking
-            </h1>
-          </a>
-          <caption>
-            <h3>Excerpt:</h3>
-              According to Ennis, <q>Critical thinking is the intellectually disciplined process of actively and skillfully conceptualizing, applying, analyzing, synthesizing, and/or  information gathered from, or generated by, observation, experience, reflection, reasoning, or communication, as a guide to belief and action</q>.
-          </caption>
-
-          <a href="https://www.skillsyouneed.com/learn/critical-thinking.html">
-            <h1>
-              Thinking|SkillsYouNeed
-            </h1>
-          </a>
-
-          <caption>
-            <h3>Excerpt:</h3>
-            Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
-          </caption>
-      </section>
+      <a href="search-result.html">search-result.html</a>
+    </section>
 
       <section>
         <h2>A definition</h2>
@@ -260,9 +240,48 @@
           It is a definition of the word 'Markup'.
         -->
         <img src="markup.png" alt="There are three definitions for the word 'Markup'">
+        <h4>
+          markup
+        </h4>
+        /m&#593:k&#652;p/<br>
+        <i><b>noun</b></i>
+        <p>
+          noun:<b>markup</b>; plural noun: <b>markups</b>; noun: <b>mark-up</b>; plural noun:<b>mark-ups</b>
+        </p>
 
+        <ol>
+          <li>
+            <p>
+              <b>
+                the amount added to the cost price of goods to cover overheads and price.
+              </b>
+            </p>
+          </li>
+          <q>
+            a markup of 50 per cent
+          </q>
+          <li>
+            <p>
+              <b>
+                the process or results of correcting text in preparation for printing.
+              </b>
+            </p>
+          </li>
+          <li>
+            <p>
+              <kbd>COMPUTING</kbd><br>
+              <b>
+                a set of tags assigned to elements</b> of a text to indicate their relation to rest of the text or
+              dictate <b>how they should be displayed.
+              </b><br>
+            </p>
+          </li>
+            <p>
+              <q>markup languages</q>
+            </p>
       </section>
 
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
