@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>
-    13: Semantic HTML
-  </title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      13: Semantic HTML
+    </title>
+  </head>
 
-<body>
-  <header>
-    <h1>
-      Semantic HTML
-    </h1>
-  </header>
-  <main>
+  <body>
+    <header>
+      <h1>
+        Semantic HTML
+      </h1>
+    </header>
 
+    <main>
     <section>
       <h2>A menu of a list of links</h2>
       <!--
@@ -104,13 +104,19 @@
               disclose choose na.</small>
           </p>
     </section>
-
-    <div class="group">
-      <label for="photo">
-        photo
-      </label>
-      <input type="file" id="photo" name="photo" accept="image/png,image/jpeg,image/webp">
-    </div>
+    <section>
+      <form
+        method="POST"
+        action="/profile/save"
+        enctype="multipart/form-data">
+        <div class="group">
+        <label for="photo">
+          photo<br>
+          <input type="file" id="photo" name="photo" accept="image/png,image/jpeg,image/webp">
+        </label>
+        </div>
+      </form>
+    </section>
 
     <section>
       <h2>An excerpt</h2>
@@ -268,7 +274,7 @@
           </li>
           <li>
             <p>
-              <kbd>COMPUTING</kbd><br>
+              <span>COMPUTING</span><br>
               <b>
                 a set of tags assigned to elements</b> of a text to indicate their relation to rest of the text or
               dictate <b>how they should be displayed.
