@@ -26,27 +26,29 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
-      <ul>
-        <li>
-          <a href="/">
-            Home</a>
-        </li>
-        <li>
-          <a href="/services">
-            Our services</a>
-        </li>
-        <li>
-          <a href="/about">
-            About us</a>
-        </li>
-        <li>
-          <a href="/contact">
-            Contact us</a>
-        </li>
-      </ul>
-    </section>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">
+                Home</a>
+            </li>
+            <li>
+              <a href="/services">
+                Our services</a>
+            </li>
+            <li>
+              <a href="/about">
+                About us</a>
+            </li>
+            <li>
+              <a href="/contact">
+                Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
 
-    <section>
+      <section>
       <h2>A profile update form</h2>
       <!--
           2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
@@ -65,19 +67,19 @@
         <p>
           <label>
             First-name<br>
-            <input type="text" id="first-name" name="profile_first_name">
+            <input type="text" id="first-name" name="profile_first_name" required>
           </label>
         </p>
         <p>
           <label>
             family-name<br>
-            <input type="text" id="family-name" name="profile_family_name">
+            <input type="text" id="family-name" name="profile_family_name" required>
           </label>
         </p>
         <p>
           <label>
             Email<br>
-            <input type="text" id="email" name="username">
+            <input type="email" id="email" name="username" required>
           </label>
         </p>
 
@@ -107,11 +109,8 @@
       <label for="photo">
         photo
       </label>
-      <input id="photo" type="file" name="photo"><br>
-      <small>It accepts only PNGs,JPGs and WebP</small>
+      <input type="file" id="photo" name="photo" accept="image/png,image/jpeg,image/webp">
     </div>
-
-
 
     <section>
       <h2>An excerpt</h2>
